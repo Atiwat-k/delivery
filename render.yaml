@@ -1,0 +1,10 @@
+version: 1
+services:
+  - type: web
+    name: my-node-service
+    env: node
+    plan: free
+    runtime: node
+    nodeVersion: "20.15.1"
+    buildCommand: npm install
+    startCommand: npm start
